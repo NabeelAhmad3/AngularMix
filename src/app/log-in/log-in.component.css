@@ -1,0 +1,109 @@
+.fullForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form p {
+  font-weight: 400;
+}
+
+.form-container {
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  margin-top: 2px;
+  border: 1px solid #000;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 700;
+  font-size: 33px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  border: 0px solid transparent;
+  border-bottom: 1px solid;
+  border-bottom-color: black;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+.output {
+  border: 2px solid black;
+  display: flex;
+}
+
+.signup-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: #000;
+}
+
+.signup-options p {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 300;
+
+}
+
+.signup-options img {
+  width: 14px;
+  height: 14px;
+  margin-left: 10px;
+}
+
+.signup-options a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.centered::before,
+.centered::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #000;
+  margin: 0 10px;
+}
+
+.link-clr {
+  color: rgba(0, 204, 255, 1);
+  text-decoration: none;
+  cursor: pointer;
+}

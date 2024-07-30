@@ -1,0 +1,53 @@
+<div class="fullForm">
+  <div class="form-container " >
+    <form class="needs-validation" (ngSubmit)="onSubmit(form)" #form="ngForm">
+      <h2>SignUp</h2>
+      <p>Create an account</p>
+      <div class="form-group has-validation">
+        <input type="text" id="fname" name="fName" class="form-control" [(ngModel)]="data.fName"  required
+          placeholder="Enter first name" value="Mark" minlength="3" maxlength="20"/>
+      
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="lName" name="lName"class="form-control" [(ngModel)]="data.lName" required
+          placeholder="Enter last name" value="Mark" minlength="3" maxlength="20" />
+      
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" name="email" class="form-control" [(ngModel)]="data.email" required
+          placeholder="Enter email"value="Mark" minlength="10" maxlength="20"/>
+        
+      </div>
+
+      <div class="form-group">
+        <input type="password" id="password" name="password" class="form-control" [(ngModel)]="data.password"  required
+          placeholder="Password (8-20 long)"value="Mark" minlength="8" maxlength="20"/>
+   
+      </div>
+      <div class="form-check d-flex flex-row">
+        <input type="checkbox" name="checkbox-btn" id="" name="checkbox" id="terms"
+          [(ngModel)]="agreeTerms"  class="form-check-input me-3 is-invalid" required/>
+        <p class="">I agree terms & condition</p>
+      
+      </div>
+      <button type="submit">Creata an account</button>
+      <p>
+        Already have an account ?
+        <a href="/login" class="link-clr">Sign In</a>
+      </p>
+    </form>
+  </div>
+
+    <li *ngFor="let value of myValues">
+      First Name: {{ value.fName }}<br />
+      Last Name: {{ value.lName }}<br />
+      Email: {{ value.email }}<br />
+      Password: {{ value.password }}
+    </li>
+
+</div>
+<div class="d-flex mt-5 justify-content-center">
+<a href="/" class="btn btn-primary">Home page</a>
+</div>

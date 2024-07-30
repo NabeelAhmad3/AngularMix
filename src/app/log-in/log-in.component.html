@@ -1,0 +1,54 @@
+<div class="fullForm">
+  <div class="form-container">
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm" class="needs-validation" >
+      <h2>Login</h2>
+      <p>Let's get started</p>
+      <div class="form-group">
+        <input type="text" id="fullname" name="fullName" class="form-control" [(ngModel)]="data.fullName" minlength="3" maxlength="30" required
+          placeholder="Enter full name" />
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" class="form-control" [(ngModel)]="data.email" minlength="10" maxlength="30" required
+          placeholder="Enter email" />
+       
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" name="password" class="form-control"[(ngModel)]="data.password" minlength="8" maxlength="30" required
+          placeholder="Password (8-20 long)" />
+       
+      </div>
+      <button type="submit" >Submit</button>
+
+      <p class="centered">OR</p>
+
+      <div class="signup-options">
+        <p>
+          <a [href]="googleLogUrl"><img src="assets/google.svg" alt="google" /> Sign up with Google</a>
+        </p>
+        <p>
+          <a [href]="faceboobLogUrl"><img src="assets/facebook.svg" alt="facebook" /> Sign up with Facebook</a>
+        </p>
+      </div>
+
+      <p>
+        Create account
+        <a href="/signup" class="link-clr">Register.</a>
+      </p>
+    </form>
+  </div>
+  <!-- <ul class="output">
+    <li *ngFor="let value of myValues">
+      Full Name: {{ value.fullName }}
+      <br />
+      Email: {{ value.email }}
+      <br />
+      Password: {{ value.password }}
+    </li>
+  </ul> -->
+  <div>
+    {{myValues|json}}
+  </div>
+</div>
+<div class="d-flex mt-5 justify-content-center">
+  <a href="/" class="btn btn-primary">Home page</a>
+  </div>

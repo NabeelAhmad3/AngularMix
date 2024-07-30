@@ -1,0 +1,148 @@
+<div class="hero">
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="assets/Logo.svg" alt="Logo" class="navbar-logo">
+        </div>
+        <div class="navbar-right">
+            <ul class="navbar-list">
+                <li><a href="/api">Api</a></li>
+                <li><a href="/login">Tform</a></li>
+                <li><a href="/rform">Rform</a></li>
+                <li><a href=""><img src="assets/Notification icon.svg" alt="Bell"></a></li>
+                <li><a href="" class="products-button">See All Products</a></li>
+                <li><a href="" class="login-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero_section">
+        <div class="hero-content">
+            <p>Pakistan Biggest Auction Website</p>
+            <div class="search-bar">
+                <div class="search-input">
+                    <img src="assets/Search icon.svg" alt="Search Icon">
+                    <input type="text" class="search" placeholder="Search...">
+                </div>
+                <button>Advance Search</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Listings">
+
+    <p>
+        Live Listings
+    </p>
+    <div class="maindiv">
+        <div class="card-gallery">
+            <div class="card" let *ngFor="let item of cards">
+                <img [src]="item.ImgSrc" [alt]="item.ImgAlt" class="card-image" />
+                <div class="cardDetails">
+                    <p>{{item.des}}</p>
+                    <p>{{item.pID}}</p>
+                    <p>{{item.cBid}}</p>
+                    <p>{{item.lctn}}</p>
+                </div>
+                <button class="bid-btn">place Bid</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="work-stn">
+    <p>
+        How it works
+    </p>
+</div>
+<div class="container">
+    <div class="text-side">
+        <div class="text-item">
+            <h3>Heading 1</h3>
+            <p>Text content for Heading 1</p>
+            <br>
+            <p>Text content for Heading 1</p><br>
+            <p>Text content for Heading 1</p>
+        </div>
+        <div class="text-item">
+            <h3>Heading 2</h3>
+
+            <p>Text content for Heading 2</p>
+            <br>
+            <p>Text content for Heading 2</p>
+            <br>
+            <p>Text content for Heading 2</p>
+        </div>
+        <div class="text-item">
+            <h3>Heading 3</h3>
+            <p>Text content for Heading 3</p>
+            <br>
+            <p>Text content for Headi</p>
+            <br>
+            <p>Text content for Headi</p>
+        </div>
+
+        <button class="work-btn"> Get started now</button>
+    </div>
+    <img class="large-image" src="assets/work.svg" alt="Image description">
+</div>
+<div class="work-stn">
+    <p>
+        Feature Products
+    </p>
+</div>
+<div class="maindiv">
+    <div class="card-gallery">
+        <div class="card" let *ngFor="let item of cards">
+            <img [src]="item.ImgSrc" [alt]="item.ImgAlt" class="card-image" />
+            <div class="cardDetails">
+                <p>{{item.des}}</p>
+                <p>{{item.pID}}</p>
+                <p>{{item.cBid}}</p>
+                <p>{{item.lctn}}</p>
+            </div>
+            <button class="bid-btn">place Bid</button>
+        </div>
+    </div>
+</div>
+
+
+    <div class="category">
+        <div class="work-stn">
+            <p>
+                List of all categories
+            </p>
+        </div>
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="navbar-item">
+                    <h3>Cars</h3>
+                </div>
+                <div class="navbar-item">
+                    <h3>Cities</h3>
+                </div>
+                <div class="navbar-item">
+                    <h3>Model</h3>
+                </div>
+                <div class="navbar-item">
+                    <h3>Make</h3>
+                </div>
+                <div class="navbar-item">
+                    <h3>Budget</h3>
+                </div>
+                <div class="navbar-item">
+                    <h3>Body Type</h3>
+                </div>
+            </nav>
+
+            <div class="category-content">
+                <div class="category-item" *ngFor="let item of cards">
+                    <img [src]="item.ImgSrc" alt="Image 1">
+                    <p>{{item.imgName}}</p>
+                    <img src="assets/car1.svg" alt="Image 1">
+                    <p>{{item.imgName}}</p>
+                    <img src="assets/car2.svg" alt="Image 1">
+                    <p>{{item.imgName}}</p>
+                </div>
+        </div>
+    </div>
+
