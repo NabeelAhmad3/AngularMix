@@ -49,11 +49,28 @@
 
 .hero {
     position: relative;
-    height: 650px;
-    background-image: url('../../assets/Hero background.svg');
+    height: 640px;
+    background-image: url('../../assets/Hero background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation: backgroundChange 16s infinite;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes backgroundChange {
+    0% ,100%{
+        background-image: url('../../assets/Hero background.png');
+    }
+    44% {
+        background-image: url('../../assets/Hero background2.png');
+    }
+    77% {
+        background-image: url('../../assets/Hero background3.png');
+    }
+    
+ 
 }
 
 .hero_section {
